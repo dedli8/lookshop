@@ -5,8 +5,15 @@
   &-custumcare {
     background-color: white;
     color: #838383;
-
     padding: 35px 0;
+    .media(@width-mid, {
+    color: white;
+    padding: 8px 0 0 0;
+      background-color: inherit;
+    float: left;
+    height: 30px;
+    box-sizing: border-box;
+    });
   }
   &-form{
     height: 96px;
@@ -20,9 +27,16 @@
       border-right: 2px solid #444444;
       vertical-align: top;
       padding-top: 28px;
+      .media(@width-mid, {
+        padding: 8px 0 0 0;
+      });
     }
     &-currensy{
       width: 24.375%;
+      .media(@width-mid, {
+        border-left: 2px solid #444444;
+        //padding-top: 5px;
+      });
       &-wrap{
         height: 100%;
         position: relative;
@@ -33,7 +47,15 @@
          right: 25px;
           border: 10px solid transparent;
           border-top-color: white;
+          .media(@width-mid, {
+            border-width: 3px;
+          right: 7px;
+          top: 7px;
+          });
         }
+        .media(@width-mid, {
+          padding-top: 3px;
+        });
       }
     }
     &-contact {
@@ -45,6 +67,9 @@
       .account-icon {
         .sprite(@-contacticon);
         margin-right: 2.8125%;
+        .media(@width-mid, {
+          .sprite(@-contacticonsmall);
+        });
       }
     }
       &-search {
@@ -53,7 +78,24 @@
         &-icon {
          .sprite(@searchicon);
           display: inline-block;
+          .media(@width-mid, {
+            .sprite(@searchiconsmall);
+          });
         }
+        .media(@width-mid, {
+        border-right: 2px solid #444444;
+      });
+        .media(@width-sm, {
+          border: none;
+        });
      }
-  }
+    .media(@width-mid, {
+      float: right;
+      height: 30px;
+    });}
+  .media(@width-mid, {
+    background-color: @black;
+  font-size: 11px;
+  height: 30px;
+  });
 }
