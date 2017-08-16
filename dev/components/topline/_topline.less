@@ -1,14 +1,59 @@
 .topline {
+  font-size: 30/12rem;
+  text-transform: uppercase;
+  text-align: center;
   &-custumcare {
     background-color: white;
     color: #838383;
-    font-size: 30/12rem;
-    text-transform: uppercase;
-    text-align: center;
+
     padding: 35px 0;
   }
   &-form{
+    height: 96px;
     background-color: @black;
     color: @white;
+    & > *{
+      height: 100%;
+      box-sizing: border-box;
+      display: inline-block;
+      background-color: inherit;
+      border-right: 2px solid #444444;
+      vertical-align: top;
+      padding-top: 28px;
+    }
+    &-currensy{
+      width: 24.375%;
+      &-wrap{
+        height: 100%;
+        position: relative;
+        &:after{
+          content: '';
+          position: absolute;
+          top: 8px;
+         right: 25px;
+          border: 10px solid transparent;
+          border-top-color: white;
+        }
+      }
+    }
+    &-contact {
+      width: 60%;
+      & > * {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .account-icon {
+        .sprite(@-contacticon);
+        margin-right: 2.8125%;
+      }
+    }
+      &-search {
+        width: 100%-60-24.375;
+        border: none;
+        &-icon {
+         .sprite(@searchicon);
+          display: inline-block;
+        }
+     }
   }
 }
