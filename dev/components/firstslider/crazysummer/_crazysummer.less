@@ -1,0 +1,89 @@
+.crazy-summer-block {
+  position: absolute;
+  left: 10.15625%;
+  top: 60px;
+  .crazy {
+    font-family: @luxury;
+    font-size: 30px;
+    position: relative;
+    color: @crazysummercolor;
+    width: 180px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 17px;
+      left: 0px;
+      width: 52px;
+      height: 0;
+      border-bottom: 1px solid @crazysummercolor;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 17px;
+      right: 0px;
+      width: 52px;
+      height: 0;
+      border-bottom: 1px solid @crazysummercolor;
+    }
+  }
+  .crazy-summer-pic {
+    position: relative;
+    margin-bottom: 22px;
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 252px;
+      height: 2px;
+      background-color: @crazysummercolor;
+      border-top: 1px solid #aa9d96;
+      border-bottom: 1px solid #aa9d96;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -13px;
+      left: 0;
+      width: 252px;
+      height: 0;
+      background-color: @crazysummercolor;
+      border-top: 1px solid #e5e0d9;
+      border-bottom: 1px solid #aa9d96;
+    }
+  }
+  .women-collection{
+    text-transform: uppercase;
+    text-align: center;
+    color: @crazysummercolor;
+    font-size: 27px;
+    font-family: @ltsn;
+    margin-bottom: 13px;
+  }
+  &-button{
+    position: relative;
+    outline: none;
+    border: none;
+    background-color: @bgcolor;
+    margin: 0 auto;
+    padding: 15px 38px 15px 15px;
+    color: @white;
+    font-family: @ltsn;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    border-bottom: 3px solid #dd6b44;
+    &:after{
+      content: '';
+      position: absolute;
+      right: 17px;
+      top: 17px;
+      border: transparent 5px solid;
+      border-left-color: @white;
+    }
+  }
+}
