@@ -43,15 +43,6 @@
                 }
             ]
         });
-        $('#secondslider').slick('slickFilter', '.category-whathot', '.category-desiners');
-
-        $('.secondslider-categories li').on('click', function () {
-            $('.secondslider-categories li').removeClass('active');
-            $(this).addClass('active');
-
-            $('#slider').slick('slickUnfilter');
-            $('#slider').slick('slickFilter', '.category-' + $(this).attr('data-category'));
-        });
     });
 </script>
 </body>
