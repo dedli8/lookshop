@@ -1,7 +1,6 @@
 .first-contact-section {
   background-color: @white;
   padding: 0 15px;
-  height: 98px;
   margin-top: 26px;
   .first-contact-section-box{
     color: #6b6b6b;
@@ -10,6 +9,7 @@
       font-size: 0;
       line-height: 55px;
       display: block;
+      .media(@width-mid, { float: left; margin-bottom: 0;});
       & > * {
         vertical-align: middle;
       }
@@ -62,7 +62,6 @@
           .media(@width-mid, { .sprite(@smallplusicon);});
         }
       }
-      .media(@width-mid, { float: left; margin-bottom: 0;});
     }
     .find-us-box{
       height: 90px;

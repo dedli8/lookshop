@@ -1,81 +1,84 @@
-.secondslider {
-  position: relative;
-  background-color: @bgcolor;
-  color: #373737;
-  text-align: center;
-  .slick-next {
-    outline: none;
-    border: none;
-    font-size: 0;
-    background-color: inherit;
-    background-image: url(../img/sliderrightarrow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 47px;
-    height: 47px;
-    position: absolute;
-    right: 0px;
-    top: -47px;
-  }
-  .slick-prev {
-    outline: none;
-    border: none;
-    font-size: 0;
-    background-color: #f2f2f2;
-    background-image: url(../img/sliderleftarrow.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 47px;
-    height: 47px;
-    position: absolute;
-    right: 47px;
-    top: -47px;
-  }
-  .secondslider-item {
-    padding-top: 30px;
-    &-container {
-      position: relative;
-      width: 220px;
-      background-color: #f7f7f7;
-      padding-bottom: 12px;
-      &-saleicon{
-        position: absolute;
-        top: 0;
-        left: 0;
-        .sprite(@sale);
-      }
-      .secondslider-item-p1 {
-        padding-top: 10px;
-        margin-bottom: 10px;
-      }
-      .secondslider-item-p2 {
-        font-size: 22px;
-        margin-bottom: 10px;
-      }
-      .secondslider-button {
+.secondslider-container {
+  font-size: 0;
+  .secondslider {
+    position: relative;
+    background-color: @bgcolor;
+    color: #373737;
+    text-align: center;
+    .slick-next {
+      outline: none;
+      border: none;
+      font-size: 0;
+      background-color: inherit;
+      background-image: url(../img/sliderrightarrow.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      right: 0px;
+      top: -48px;
+    }
+    .slick-prev {
+      outline: none;
+      border: none;
+      font-size: 0;
+      background-color: #f2f2f2;
+      background-image: url(../img/sliderleftarrow.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      right: 48px;
+      top: -48px;
+    }
+    .secondslider-item {
+      padding-top: 30px;
+      &-container {
         position: relative;
-        outline: none;
-        border: none;
-        background-color: @bgcolor;
-        margin: 0 auto;
-        //padding: 15px 38px 15px 15px;
-        color: @white;
-        font-family: @ltsn;
-        font-size: 12px;
-        text-transform: uppercase;
-        display: block;
-        border-bottom: 3px solid #dd6b44;
-        width: 54.54545454545455%;
-        height: 30px;
-        .secondslider-button-text{
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 10px;
+        width: 220px;
+        background-color: #f7f7f7;
+        padding-bottom: 12px;
+        &-saleicon {
+          position: absolute;
+          top: 0;
+          left: 0;
+          .sprite(@sale);
         }
-        .plus-icon {
-          display: inline-block;
-          vertical-align: middle;
-          .sprite(@smallplusicon);
+        .secondslider-item-p1 {
+          padding-top: 10px;
+          margin-bottom: 10px;
+        }
+        .secondslider-item-p2 {
+          font-size: 22px;
+          margin-bottom: 10px;
+        }
+        .secondslider-button {
+          position: relative;
+          outline: none;
+          border: none;
+          background-color: @bgcolor;
+          margin: 0 auto;
+          //padding: 15px 38px 15px 15px;
+          color: @white;
+          font-family: @ltsn;
+          font-size: 12px;
+          text-transform: uppercase;
+          display: block;
+          border-bottom: 3px solid #dd6b44;
+          width: 54.54545454545455%;
+          height: 30px;
+          .secondslider-button-text {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 10px;
+          }
+          .plus-icon {
+            display: inline-block;
+            vertical-align: middle;
+            .sprite(@smallplusicon);
+          }
         }
       }
     }
