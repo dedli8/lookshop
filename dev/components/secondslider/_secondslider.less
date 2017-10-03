@@ -41,7 +41,7 @@
         width: 220px;
         background-color: #f7f7f7;
         padding-bottom: 12px;
-        &-saleicon {
+        .sale-icon {
           position: absolute;
           top: 0;
           left: 0;
@@ -50,10 +50,13 @@
         .secondslider-item-p1 {
           padding-top: 10px;
           margin-bottom: 10px;
+          font-size: 17px;
+          .media(@width-mid, { font-size: 12px; });
         }
         .secondslider-item-p2 {
-          font-size: 22px;
+          font-size: 27px;
           margin-bottom: 10px;
+          .media(@width-mid, { font-size: 22px; });
         }
         .secondslider-button {
           position: relative;
@@ -61,19 +64,20 @@
           border: none;
           background-color: @bgcolor;
           margin: 0 auto;
-          //padding: 15px 38px 15px 15px;
           color: @white;
           font-family: @ltsn;
-          font-size: 12px;
+          font-size: 20px;
           text-transform: uppercase;
           display: block;
-          border-bottom: 3px solid #dd6b44;
-          width: 54.54545454545455%;
-          height: 30px;
+          border-bottom: 5px solid #dd6b44;
+          width: 81%;
+          height: 61px;
+          .media(@width-mid, { height: 30px; font-size: 17px; width: 65%; border-width: 3px; });
           .secondslider-button-text {
             display: inline-block;
             vertical-align: middle;
-            margin-right: 10px;
+            margin-right: 20px;
+            .media(@width-mid, { margin-right: 5px; });
           }
           .plus-icon {
             display: inline-block;

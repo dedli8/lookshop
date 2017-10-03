@@ -1,0 +1,82 @@
+.thirdslider {
+  margin-top: 25px;
+  position: relative;
+  color: #373737;
+  text-align: center;
+  .thirdslider-item {
+    padding-top: 30px;
+    &-container {
+      position: relative;
+      width: 220px;
+      background-color: #f7f7f7;
+      padding-bottom: 12px;
+      .sale-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        .sprite(@sale);
+      }
+      .thirdslider-item-p1 {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        font-size: 17px;
+        .media(@width-mid, { font-size: 12px; });
+      }
+      .thirdslider-item-p2 {
+        font-size: 27px;
+        margin-bottom: 10px;
+        .media(@width-mid, { font-size: 22px; });
+      }
+      .thirdslider-button {
+        position: relative;
+        outline: none;
+        border: none;
+        background-color: @bgcolor;
+        margin: 0 auto;
+        color: @white;
+        font-family: @ltsn;
+        font-size: 20px;
+        text-transform: uppercase;
+        display: block;
+        border-bottom: 5px solid #dd6b44;
+        width: 81%;
+        height: 61px;
+        .media(@width-mid, { height: 30px; font-size: 17px; width: 65%; border-width: 3px; });
+        .thirdslider-button-text {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 20px;
+          .media(@width-mid, { margin-right: 5px; });
+        }
+        .plus-icon {
+          display: inline-block;
+          vertical-align: middle;
+          .sprite(@smallplusicon);
+        }
+      }
+    }
+    .sale {
+      .sale-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        .sprite(@sale);
+      }
+    }
+  }
+}
+  .thirdslider-btnmore {
+    display: block;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    background-color: @black;
+    width: 34.21875%;
+    color: @white;
+    font-family: @ltsn;
+    font-size: 20px;
+    height: 60px;
+    text-transform: uppercase;
+    margin-top: 28px;
+    .media(@width-mid, { display: none; });
+  }
