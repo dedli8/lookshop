@@ -5,6 +5,8 @@
   margin-top: 68px;
   position: relative;
   margin-bottom: 30px;
+  display: none;
+  .media(@width-mid, { display: block;});
   &-text-box{
     margin: 0 auto;
     width: 188px;
@@ -25,9 +27,16 @@
   .brands-container {
 text-align: center;
     display: inline-block;
-    width: 100%/8;
+    width: 100%/6;
+    .media(@width-max, {
+      width: 100%/8;});
     .brands-icon {
 vertical-align: middle;
+    }
+    .hidden{
+      display: none;
+      .media(@width-max, {
+        display: inline-block;});
     }
   }
 }
